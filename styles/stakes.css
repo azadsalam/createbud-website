@@ -1,0 +1,100 @@
+/* ============================================================
+   THE STAKES
+   Pull quote + 4 pain point cards.
+   Cards: border-only, no fill, no shadow.
+============================================================ */
+
+.stakes {
+  background-color: var(--color-surface);
+  border-top: var(--border-width) solid var(--color-border);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+/* --- Pull quote --- */
+.stakes__quote {
+  border: none;
+  margin: 0 0 var(--space-16);
+  padding: 0;
+  max-width: 760px;
+}
+
+.stakes__quote p {
+  font-size: clamp(var(--text-xl), 3vw, var(--text-3xl));
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.stakes__quote em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+/* --- Section label --- */
+.stakes__label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-8);
+}
+
+/* --- Cards grid --- */
+.stakes__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+/* --- Individual card --- */
+.stakes__card {
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-8);
+  transition: border-color var(--transition-normal);
+}
+
+.stakes__card:hover {
+  border-color: var(--color-accent);
+}
+
+.stakes__card-number {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+.stakes__card-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.stakes__card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  line-height: var(--line-height-relaxed);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .stakes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .stakes__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stakes__quote p {
+    font-size: var(--text-xl);
+  }
+}

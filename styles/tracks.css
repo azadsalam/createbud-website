@@ -1,0 +1,145 @@
+/* ============================================================
+   TRACKS
+   3 sprint cards side by side.
+   Hover: border lights up in accent color.
+============================================================ */
+
+.tracks {
+  background-color: var(--color-surface);
+  border-top: var(--border-width) solid var(--color-border);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+/* --- Section header --- */
+.tracks__eyebrow {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-3);
+}
+
+.tracks__title {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-16);
+}
+
+/* --- Grid --- */
+.tracks__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+/* --- Card --- */
+.tracks__card {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-8);
+  transition: border-color var(--transition-normal);
+}
+
+.tracks__card:hover {
+  border-color: var(--color-accent);
+}
+
+.tracks__card-top {
+  flex: 1;
+  margin-bottom: var(--space-8);
+}
+
+/* --- Tag badge --- */
+.tracks__tag {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+/* --- Card title --- */
+.tracks__card-title {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+/* --- One-liner --- */
+.tracks__card-sub {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  line-height: var(--line-height-relaxed);
+}
+
+/* --- Outcomes list --- */
+.tracks__outcomes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.tracks__outcomes li {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  padding-left: var(--space-5);
+  position: relative;
+}
+
+.tracks__outcomes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+/* --- CTA link --- */
+.tracks__cta {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent);
+  text-decoration: none;
+  margin-top: auto;
+  transition: opacity var(--transition-fast);
+}
+
+.tracks__cta:hover {
+  opacity: 0.75;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .tracks__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tracks__title {
+    font-size: var(--text-3xl);
+  }
+}
+
+@media (max-width: 600px) {
+  .tracks__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}
