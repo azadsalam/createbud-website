@@ -209,7 +209,7 @@ To change layout or content, edit only `index.html` — each section is wrapped 
 
 ### Phase 5 — Launch
 
-- [ ] **Step 18: Assets + copy finalization**
+- [x] **Step 18: Assets + copy finalization**
   - Final copy review — ensure all text matches brand voice
   - Real photos are already in place (asma.jpg, azad.jpg)
   - Real favicon already wired (icon.png)
@@ -218,9 +218,8 @@ To change layout or content, edit only `index.html` — each section is wrapped 
   - Page title, meta description, Open Graph tags (`og:title`, `og:description`, `og:image`)
   - Controls how the link previews on Twitter, iMessage, LinkedIn
 
-- [ ] **Step 20: Deploy**
-  - Recommended: Netlify (drag-and-drop deploy, free tier, HTTPS automatic)
-  - Or: Vercel, GitHub Pages
+- [x] **Step 20: Deploy**
+  - GitHub Pages
   - Point custom domain if available
 
 ---
@@ -242,7 +241,7 @@ _Use this section to track decisions made during the build._
 | Phase 2 — Sections | Steps 3–11 | ✅ Complete |
 | Phase 3 — Interactivity | Steps 12–15 | ✅ Complete |
 | Phase 4 — Integrations | Steps 16–17 | ⏳ Needs accounts (Formspree, Calendly) |
-| Phase 5 — Launch | Steps 18–20 | ⏳ Pending |
+| Phase 5 — Launch | Steps 18–20 | 🔄 In Progress (18 ✅, 19 ✅, 20 ⏳) |
 
 **Remaining placeholders to replace before launch:**
 - `YOUR_FORM_ID` in `index.html` line ~394 → Formspree form ID

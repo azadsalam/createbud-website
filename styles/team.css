@@ -26,7 +26,6 @@
   letter-spacing: -0.02em;
   color: var(--color-text);
   margin-bottom: var(--space-16);
-  max-width: 600px;
   line-height: var(--line-height-tight);
 }
 
@@ -94,7 +93,6 @@
 @media (max-width: 768px) {
   .team__grid {
     grid-template-columns: 1fr;
-    max-width: 480px;
   }
 
   .team__title {
