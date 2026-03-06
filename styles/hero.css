@@ -44,7 +44,7 @@
 .hero__content {
   position: relative;
   z-index: 1;
-  padding-top: calc(var(--space-28) + var(--space-12)); /* clear navbar */
+  padding-top: calc(var(--navbar-height) + var(--space-20)); /* clear navbar */
   padding-bottom: var(--space-28);
 }
 
@@ -130,7 +130,7 @@
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .hero__content {
-    padding-top: calc(var(--space-20) + var(--space-8));
+    padding-top: calc(var(--navbar-height) + var(--space-10));
     padding-bottom: var(--space-20);
   }
 
@@ -151,7 +151,7 @@
 
 @media (max-width: 480px) {
   .hero__content {
-    padding-top: calc(var(--space-16) + var(--space-8));
+    padding-top: calc(var(--navbar-height) + var(--space-6));
     padding-bottom: var(--space-16);
   }
 

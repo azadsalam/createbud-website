@@ -21,7 +21,7 @@
 }
 
 .tracks__title {
-  font-size: var(--text-4xl);
+  font-size: var(--text-section-title);
   font-weight: var(--font-weight-bold);
   letter-spacing: -0.02em;
   color: var(--color-text);
@@ -130,10 +130,6 @@
 @media (max-width: 900px) {
   .tracks__grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .tracks__title {
-    font-size: var(--text-3xl);
   }
 }
 

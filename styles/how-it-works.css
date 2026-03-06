@@ -19,7 +19,7 @@
 }
 
 .hiw__title {
-  font-size: var(--text-4xl);
+  font-size: var(--text-section-title);
   font-weight: var(--font-weight-bold);
   letter-spacing: -0.02em;
   color: var(--color-text);
@@ -117,9 +117,5 @@
     padding-top: 0;
     padding-block: var(--space-2);
     transform: rotate(90deg);
-  }
-
-  .hiw__title {
-    font-size: var(--text-3xl);
   }
 }

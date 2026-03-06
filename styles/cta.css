@@ -23,7 +23,7 @@
   line-height: var(--line-height-tight);
   color: var(--color-text);
   margin-bottom: var(--space-6);
-  max-width: 700px;
+  max-width: 44rem;
 }
 
 /* --- Sub-copy --- */
@@ -31,7 +31,7 @@
   font-size: var(--text-base);
   color: var(--color-muted);
   margin-bottom: var(--space-10);
-  max-width: 480px;
+  max-width: 30rem;
 }
 
 /* --- Form --- */
@@ -39,7 +39,7 @@
   display: flex;
   gap: var(--space-3);
   width: 100%;
-  max-width: 480px;
+  max-width: 30rem;
   margin-bottom: var(--space-6);
 }
 
@@ -51,7 +51,7 @@
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--text-base);
-  padding: 0.75rem 1rem;
+  padding: var(--space-3) var(--space-4);
   outline: none;
   transition: border-color var(--transition-fast);
 }
