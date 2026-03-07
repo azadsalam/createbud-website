@@ -18,7 +18,7 @@
 
 /* Frosted-glass state triggered by JS scroll */
 .navbar.scrolled {
-  background-color: rgba(10, 10, 10, 0.75);
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom-color: var(--color-border);
@@ -135,7 +135,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(10, 10, 10, 0.96);
+    background-color: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: var(--border-width) solid var(--color-border);

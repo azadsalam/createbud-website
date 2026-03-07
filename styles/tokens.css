@@ -7,12 +7,12 @@
 :root {
 
   /* --- Colors --- */
-  --color-bg:      #0A0A0A;
-  --color-surface: #141414;
-  --color-border:  #2A2A2A;
-  --color-accent:  #6EE7B7;
-  --color-text:    #F5F5F5;
-  --color-muted:   #888888;
+  --color-bg:      #FFFFFF;
+  --color-surface: #F4F9F7;
+  --color-border:  #DDE8E3;
+  --color-accent:  #059669;
+  --color-text:    #111827;
+  --color-muted:   #6B7280;
 
   /* --- Typography --- */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
