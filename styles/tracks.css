@@ -51,7 +51,6 @@
 }
 
 .tracks__card-top {
-  flex: 1;
   margin-bottom: var(--space-8);
 }
 
